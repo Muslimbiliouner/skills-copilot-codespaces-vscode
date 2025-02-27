@@ -1,9 +1,12 @@
 function skillsmember() {
   return {
     restrict: 'E',
+    templateUrl: 'modules/skills/views/member.html',
+    controller: 'SkillsMemberController',
+    controllerAs: 'vm',
+    bindToController: true,
     scope: {
-      skills: '=info'
-    },
-    template: '<div ng-repeat="skill in skills">{{ skill }}</div>'
+      member: '='
+    }
   };
 }
