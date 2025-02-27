@@ -1,12 +1,16 @@
-function skillsmember() {
+function skillsMember () {
   return {
-    restrict: 'E',
-    templateUrl: 'app/members/skills-member.html',
-    controller: 'SkillsMemberController',
-    controllerAs: 'vm',
-    bindToController: true,
-    scope: {
-      member: '='
-    }
-  };
+    id: 'member',
+    name: 'Member',
+    skills: [
+      {
+        id: 'skill1',
+        name: 'Skill 1'
+      },
+      {
+        id: 'skill2',
+        name: 'Skill 2'
+      }
+    ]
+  }
 }
